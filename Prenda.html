@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="miestilo2.css">
+	<title>Prueba2</title>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/6ca4d84afb.js" crossorigin="anonymous"></script>
+	<style type="text/css">
+		#part1{
+			
+			float: 	left;
+			width: 40%;
+
+			
+			
+		
+		}
+		#part2{
+			
+			float: 	left;
+			width: 10%;
+			
+			
+			
+			
+		}
+		#part3{
+			
+			float: 	left;
+			width: 40%;
+			
+
+			
+			
+		}
+		#part4{
+			
+			width: 10%;
+			float: left;
+
+
+
+			
+		
+		}
+		#part11{
+			
+			float: 	left;
+			width: 40%;
+			margin-top: 40px;
+
+			
+			
+		
+		}
+		#part22{
+			
+			float: 	left;
+			width: 10%;
+			margin-top: 40px;
+			
+			
+			
+			
+		}
+		#part33{
+			
+			float: 	left;
+			width: 40%;
+			margin-top: 40px;
+			
+
+			
+			
+		}
+		#part44{
+			
+			width: 10%;
+			float: left;
+			margin-top: 40px;
+
+
+
+			
+		
+		}
+
+		#part111{
+			
+			float: 	left;
+			width: 40%;
+			margin-top: 40px;
+
+			
+			
+		
+		}
+		#part222{
+			
+			float: 	left;
+			width: 10%;
+			margin-top: 40px;
+			
+			
+			
+		}
+		#part333{
+			
+			float: 	left;
+			width: 50%;
+			margin-top: 40px;
+			
+
+			
+			
+		}
+			
+			
+		
+		#part1111{
+			
+			float: 	left;
+			width: 50%;
+			margin-top: 40px;
+			
+			
+			
+		
+		}
+		#part2222{
+			
+			float: 	left;
+			width: 40%;
+			margin-top: 40px;
+			
+			
+			
+			
+		}
+		#part3333{
+			
+			float: 	left;
+			width: 10%;
+			margin-top: 40px;
+			
+
+			
+			
+		}
+		#part11111{
+			
+			float: 	left;
+			width: 40%;
+			margin-top: 40px;
+			
+			
+			
+		
+		}
+		#part22222{
+			
+			float: 	left;
+			width: 10%;
+			margin-top: 40px;
+			
+			
+			
+			
+		}
+		#part33333{
+			
+			float: 	left;
+			width: 40%;
+			margin-top: 40px;
+			
+
+			
+			
+		}
+		#part111111{
+			
+			float: 	left;
+			width: 50%;
+			margin-top: 40px;
+			
+			
+			
+		
+		}
+		#part222222{
+			
+			float: 	left;
+			width: 40%;
+			margin-top: 40px;
+			
+			
+			
+			
+		}
+		#part333333{
+			
+			float: 	left;
+			width: 10%;
+			margin-top: 40px;
+			
+
+			
+			
+		}
+		
+	
+
+		#dol{
+			width: 75%;
+		}
+		#col{
+			width: 75%;
+		}
+		#cambio{
+			width: 75%;
+		}
+		#n1{
+			width: 75%;
+		}
+		#res{
+			width: 75%;
+		}
+		#usa{
+			width: 75%;
+		}
+		#peso2{
+			width: 75%;
+		}
+		
+		
+		#contenedor1{
+        margin-top: 25px;
+        
+    }
+    #Articulo{
+    	width: 150px;
+    }
+
+	</style>
+</head>
+<body>
+	 <script type="text/javascript" src="operaciones.js"> </script>
+        <header>
+            <a href="index.html" class="btn"><i class="icono fas fa-arrow-left"></i><span>Cotización por prenda</span></a>
+        </header>
+	<article>
+	<section id = "contenedor1">
+		<div id ="part1"><label for="nombre">Precio</label></div>
+		<div id ="part2"><a onclick="ms1();" class="btn"><i class="icono3 fas fa-question"></i><span></span></a></div>
+		<div id ="part3"><input type="text" class="valor1" id="n1"></div>
+		<div id ="part4"><a onclick="borrar();" class="btn"><i class="icono2 fas fa-trash"></i><span></span></a></div>
+		
+	</section>
+	<section id = "contenedor2">
+		<div id ="part11"> <label for="nombre">Impuestos USA</label></div>
+		<div id ="part22"><a onclick="ms2();" class="btn"><i class="icono3 fas fa-question"></i><span></span></a></div>
+		<div id ="part33"><input type="text" class="valor1" id="res"></div>
+		<div id ="part44"><a onclick="impuestos();" class="btn"><i class="icono2 fas fa-equals"></i><span></span></a></div>
+		
+		
+	</section>
+	<section id = "contenedor3">
+		<div id ="part111"><label for="Articulo">Seleccione artículo:</label></div>
+		<div id ="part222"><a onclick="ms3();" class="btn"><i class="icono3 fas fa-question"></i><span></span></a></div>
+		<div id ="part333">
+			<div  class="form-group">
+              
+                    <select id="Articulo" class = "form-control">
+                        <option value="Articulos" class="Art">Seleccione:</option>
+                        <option value="Joyería" >Joyería: 1$</option>
+                        <option value="Fundas para móvil" >Fundas para móvil: 1.50$</option>
+                        <option value="Brassier 1 unidad">Brassier 1 unidad: 2$</option>
+                        <option value="Fun">Funda 1 unidad: 2$</option>
+                        <option value="Panties 1 unidad" >Panties 1 unidad: 2$</option>
+                        <option value="Fajas 1 unidad" >Fajas 1 unidad: 2$</option>
+                        <option value="Camisas Niños">Camisas niños: 2.50$</option>
+                        <option value="Blusas Niñas" >Blusas niñas: 2.50$</option>
+                        <option value="Lentes" >Lentes: 3$</option>
+                        <option value="Bolso Pequeño">Bolso pequeño: 3$</option>
+                        <option value="Reloj">Reloj 1 unidad: 3$</option>
+                        <option value="Enagua Niñas" >Enagua niñas: 3.50$</option>
+                        <option value="Boinas" >Boinas y gorras: 4$</option>
+                        <option value="Blusas" >Blusas: 4.50$</option>
+                        <option value="Conjunto De Ropa Interior">Conjunto de ropa interior: 4.50$</option>
+                        <option value="Short" >Short: 4.50$</option>
+                        <option value="Vestido Niñas" >Vestido niñas: 4.50$</option>
+                        <option value="Minifalda">Minifalda: 5$</option>
+                        <option value="Con">Conjuntos niños: 5$</option>
+                        <option value="Licra" >Licra: 5$</option>
+                        <option value="Sandalias" >Sandalias: 5$</option>
+                        <option value="Salida De Playa">Salida de playa: 5$</option>
+                        <option value="Lencería" >Lencería: 5.50$</option>
+                        <option value="Vestido Corto" >Vestido corto: 5.50$</option>
+                        <option value="Enterizo short">Enterizo short: 5.50$</option>
+                        <option value="Falda Larga" >Falda larga: 6$</option>
+                        <option value="Traje De Baño" >Traje de baño: 6$</option>
+                        <option value="Sombreros" >Sombreros: 6$</option>
+                        <option value="Pijama De Short">Pijama de short: 6$</option>
+                        <option value="Enterizo Pantalón" >Enterizo pantalón: 6$</option>
+                        <option value="Camisas" >Camisas: 6$</option>
+                        <option value="Pantalón Niños">Pantalón niños: 6$</option>
+                        <option value="Sueter Niños" >Sueter niños: 6$</option>
+                        <option value="Conjuntos 2 piezas" >Conjuntos 2 piezas: 6.50$</option>
+                        <option value="Vestido Maxi">Vestido Maxi: 7$</option>
+                        <option value="Pijama de Pantalón" >Pijama de pantalón: 8$</option>
+                        <option value="Pantalón de mezclilla" >Pantalón de mezclilla: 8$</option>
+                        <option value="Bolso grande">Bolso grande: 8$</option>
+                        <option value="Candigan" >Cardigan, sueter y blazer: 8$</option>
+                        <option value="Conjunto Deportivo" >Conjunto deportivo: 8$</option>
+                        <option value="Zapatos">Zapatos: 12$</option>
+                        
+                    </select>
+                    
+                </div>
+
+
+		</div>
+		
+		
+		
+	</section>
+	<section id = "contenedor4">
+		<div id ="part1111"> <label for="nombre">Costo total $</label></div>
+		<div id ="part2222"><input type="text" class="valor1" id="dol"></div>
+		<div id ="part3333"><a onclick="dolar();" class="btn"><i class="icono2 fas fa-equals"></i><span></span></a></div>
+		
+		
+	</section>
+	<section id = "contenedor5">
+		<div id ="part11111"> <label for="nombre">Tipo cambio dolár</label></div>
+		<div id ="part22222"><a onclick="ms4();" class="btn"><i class="icono3 fas fa-question"></i><span></span></a></div>
+		<div id ="part33333"><input type="text" class="valor1" id="cambio"></div>
+		
+		
+	</section>
+	<section id = "contenedor6">
+		<div id ="part111111"> <label for="nombre">Total en colones</label></div>
+		<div id ="part222222"> <input type="text" class="valor1" id="col"></div>
+		<div id ="part333333"><a onclick="colon();" class="btn"><i class="icono2 fas fa-equals"></i><span></span></a></div>
+		
+		
+	</section>
+	
+	
+	</article>
+	<footer>
+            <p>*Precio no varía, no hay costos adicionales, confirme su compra con el 25% del total de la compra</p>
+        </footer>
+	
+</body>
+</html>
